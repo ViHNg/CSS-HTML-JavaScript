@@ -1,8 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hkY6Us38)
-# CSE330
-Name: Jamie Shin, ID: 501105, Github Username: jamies31
-Name: Vi Nguyen, ID: 498078, Github Username: ViHNg
-
 Link to File Sharing Website: http://ec2-3-141-39-149.us-east-2.compute.amazonaws.com/~jamie/module2-group-jamie-and-vi/loginpage.php 
 
 Creative Portion:
