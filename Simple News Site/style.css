@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Titillium+Web:ital,wght@0,400;0,600;1,400&family=Young+Serif&display=swap');
+
+body{
+    background-color: rgb(251, 237, 201);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-size: 40px;
+    color: rgb(6, 146, 57);
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    text-align: center;
+}
+
+.container {
+    max-width: 400px; 
+    margin: 0 auto; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label, input, button {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 15px; 
+    border: none;
+    background-color: #007BFF;
+    color: white; 
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+#logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.storiescontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.storycard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-height: 280px; /* For example, adjust to your needs */
+    overflow-y: auto; /* It will only show scroll if the content overflows */
+    margin-bottom: 20px;
+    line-height: 0.6; 
+}
+
+.storycard h3 {
+    margin: 0;
+}
+
+.storycard a {
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+}
+
+.postername {
+    font-size: 23px;  
+}
+
+/*#comments{
+    font-size: 25px;
+}*/
+
+.comment {
+    background-color: #f2f2f2;  
+    padding: 10px;             
+    border-radius: 15px;       
+    margin-bottom: 15px;      
+    font-size: 20px;           
+    max-width: 90%;     
+    position: relative;      
+    line-height: 1.5; 
+}
+
+.comment::before {
+    content: '';               
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;     
+    border-right: 10px solid #f2f2f2;     
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;                      
+    left: -10px;                            
+    top: 10px;                               
+}
+
+.comment small {
+    font-size: 12px;         
+    display: block;         
+    color: #666;              
+    margin-top: 5px;         
+}
+
+.storytitle {
+    line-height: 1.5;  /* Change this value to your desired line height */
+}
+
+.clicktoreadmore{
+    font-size: 25px;
+}
+
+.twitter{
+    font-size: 25px;
+    
+}
+
+.deleteeditcomments{
+    display: flex;
+    flex-direction: row;
+    max-width: 30%;
+}
+.deleteeditcomments form {
+    width: 50%; 
+    padding: 5px;
+}
