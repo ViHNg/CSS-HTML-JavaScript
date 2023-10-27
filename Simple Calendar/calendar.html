@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AJAX Calendar</title>
+</head>
+<body>
+    <header>
+        <div id="authSectionGuest">
+            <button id="loginbutton" type="button">Login</button>
+            <button id="registerbutton">Register</button>
+
+        </div>
+        <div id="authSectionUser" style="display:none;">
+            <button id="exportJSON">Export as JSON</button>
+            <button id="exportCSV">Export as CSV</button>
+            <button id="UserIcon">UserID</button>
+            <button id="logoutbutton">Logout</button>
+            <script src="logout.js"></script>
+        </div>
+    </header>
+    <main>
+        <div id="login">
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            
+            <button id="login_btn">Log In</button>
+           
+        </div>
+        <div id="register">
+            <input type="text" id="newuser" placeholder="Username" />
+            <input type="password" id="newpass" placeholder="Password" />
+           
+            <button id="register_btn">Register</button>
+            <script src="register.js"></script> 
+        </div>
+
+        <div id="event-change">
+            
+            <input type="text" id="title"/>
+            <input type="date" id="date" />
+            <input type="time" id="time" />
+        
+           
+            <button id="AddEventButton">Add Event</button>
+
+            <input type="color" id="themeColor" value="#ffffff">
+            <button id="setThemeColor">Set Theme Color</button>
+            
+        </div>
+        <div id="message"></div>
+        <div id="calendarNav">
+            <h2 id="currentmonthyear">January 2023</h2>
+            <div id="monthNav">
+                <button id="prevmonth">← Prev Month</button>
+                <button id="nextmonth">Next Month →</button>
+            </div>
+        </div>
+        <table id="calendar-grid">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- added using js -->
+            </tbody>
+        </table>
+        <div id="overlay"></div>
+        
+        <div id="editEventModal" style="display:none;">
+            <input type="text" id="newtitle" required>
+            <input type="date" id="newdate" required>
+            <input type="time" id="newtime" required>
+            <input type="hidden" id="eventID">      
+            <p>*please enter a date to save changes*</p>    
+            <button id="saveChanges">Save Changes</button>
+        </div>
+    </main>
+    <script src="display.js"></script>
+    <script src="EventChange.js"></script>
+    <script src="login.js"></script>
+    <script src="logout.js"></script>
+    <script src="register.js"></script>
+    <script src="user_status.js"></script>
+    
+</body>
+</html>

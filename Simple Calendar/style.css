@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Raleway:wght@200&family=Titillium+Web:ital,wght@0,400;0,600;1,400&family=Ubuntu:wght@300&family=Young+Serif&display=swap');
+
+body{
+    background-color: rgb(251, 237, 201);
+    /*font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Young Serif', serif;*/
+    font-size: 40px;
+    color: rgb(47, 70, 186);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: rgb(7, 153, 163);
+    color: #FFF;
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+}
+
+#authSectionGuest button {
+    margin-left: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #FFF;
+    cursor: pointer;
+    
+}
+
+#authSectionGuest button:hover {
+    background-color: #45a049;
+}
+
+
+
+#authSectionUser button {
+    margin-left: 20px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #FFF;
+    cursor: pointer;
+}
+#authSectionUser button:hover {
+    background-color: #45a049;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#login{
+    display: none;
+}
+#register{
+    display: none;
+}
+#message{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+}
+
+#calendarNav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+}
+
+.currentmonthyear{
+    text-align: center;
+}
+
+#monthNav,
+#weekNav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+#calendarNav button {
+    background-color: rgb(243, 124, 124);
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#calendarNav button:hover {
+    background-color: rgb(225, 30, 30);
+}
+
+
+#calendar-grid {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: rgb(255, 246, 228);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#calendar-grid th,
+#calendar-grid td {
+    border: 1px solid #e0e0e0;
+    padding: 40px; 
+    text-align: center;
+}
+
+#calendar-grid th {
+    background-color: #fbefcf;
+}
+
+/*
+#event-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+*/
+
+#close-event-modal {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+*/
+
+.week-view-cell {
+    height: 150px; 
+    vertical-align: top; 
+}
+
+#calendar-grid td {
+    position: relative; 
+    height: 60px;
+}
+
+#calendar-grid td::before {
+    content: attr(data-date);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.event {
+    background-color: rgba(0, 123, 255, 0.1); 
+    border: 1px solid rgba(0, 123, 255, 0.5); 
+    border-radius: 3px; 
+    margin-top: 5px; 
+    padding: 2px 4px; 
+    font-size: 17px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+#authSectionGuest {
+    display: block; 
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+#editEventModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    width: 80%; 
+    max-width: 500px;
+    overflow-y: auto; 
+}
+
+#close-event-modal {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.highlighted-event {
+    background-color: #ffff99;  
+    border: 2px solid #ffcc00; 
+}
+
+#enterDate{
+    font-size: 10px;
+}
